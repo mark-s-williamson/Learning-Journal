@@ -28,13 +28,21 @@ A/B Testing, Experimentation, Simple ML Algorithms -> Data Scientist/Analyst<br/
 Analytics, Metrics, Segments, Aggregates, Festures, Training Data -> Data Scientist/Analyst<br/>
 Cleaning, Anomaly Detection, Prep -> Data Scientist/Analyst<br/>
 Reliable Dataflow, Infrastructure, Pipelines, ETL, Structured and Unstructured Data Storage -> Data Engineer<br/>
-Instrumentation, Logging, Sensors, External DAta, User Generated Content -> Data Infrastructure Engineer<br/>
+Instrumentation, Logging, Sensors, External DAta, User Generated Content -> Data Infrastructure Engineer
 ### Bottom
 
+## Transitioning from Small to Big Data<br/>
+### Why?
+Overwhelming Data<br/>
+Performance Bottlenecks<br/>
+Missed Opportunities
+
+### Characteristics of Data
+Volume<br/> Variety<br/> Velocity<br/> Veracity<br/> Value<br/>
 
 # Questions<br/>
 ## Question 1:<br/>
-Transparency in Algorithms is an important part of data-driven culture, but we're seeing in increase in ML where the algorithm is obscured.
+Transparency in Algorithms is an important part of data-driven culture, but we're seeing in increase in ML where the algorithm is obscured.<br/>
 
 # Self Research<br/>
 
