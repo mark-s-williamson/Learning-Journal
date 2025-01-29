@@ -64,6 +64,25 @@ Confidentiality, Integrity, Accessibility
 ### Performance Optimisation
 ### Data Documentation
 
+## Data Stewardship Principles
+### Data Quality
+### Data Governance
+### Data Ethics
+
+## The three stages of Adding Value with Data
+### Data Wrangling
+DAta Sourcing<br/> Data preparation and formatting
+### Data Exploration
+Experimentation and observation<br/> Model Building and evaluation
+### Data Operationalisation
+Model Deployment<br/> Visualising Results, Defining Strategies
+
+## Data as a Product
+### Direct Monetisation
+Sell data directly
+### Indirect Monetisation
+Use the data to drive strategies
+
 
 # Questions<br/>
 ## Question 1:<br/>
