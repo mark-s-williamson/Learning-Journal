@@ -34,6 +34,7 @@ Instrumentation, Logging, Sensors, External DAta, User Generated Content -> Data
 
 # Questions<br/>
 ## Question 1:<br/>
+Transparency in Algorithms is an important part of data-driven culture, but we're seeing in increase in ML where the algorithm is obscured.
 
 # Self Research<br/>
 
