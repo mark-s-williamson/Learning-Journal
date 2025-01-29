@@ -40,6 +40,31 @@ Missed Opportunities
 ### Characteristics of Data
 Volume<br/> Variety<br/> Velocity<br/> Veracity<br/> Value<br/>
 
+## Fundamentals of Data<br/>
+
+## Standards and Best Practice<br/>
+### JSON, CSV, XML
+Javascript Object Notation, Comma Seperated Values, extensible markup language<br/>
+
+
+## Cloud Computing Standards<br/>
+### AWS Well-Architected Framework
+### OpenAPI
+Language agnostic
+
+## Regulatory Requirements
+### GDPR(EU)/GDPR(UK) - General Data Protection Regulations
+### ISMS - Information Security Management System
+Confidentiality, Integrity, Accessibility
+
+## Best Practices
+### Scalability
+### Security
+### Reliability
+### Performance Optimisation
+### Data Documentation
+
+
 # Questions<br/>
 ## Question 1:<br/>
 Transparency in Algorithms is an important part of data-driven culture, but we're seeing in increase in ML where the algorithm is obscured.<br/>
@@ -48,6 +73,6 @@ Transparency in Algorithms is an important part of data-driven culture, but we'r
 
 
 # Reflections<br/>
-
+###Struggled to get dataset downloaded for 
 
 `Testing Backticks (ctrl+e)`
