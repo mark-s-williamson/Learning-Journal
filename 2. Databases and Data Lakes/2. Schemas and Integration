@@ -1,0 +1,96 @@
+# Schemas and Integration
+# Relational Data Model - Keys and Relationships
+## Primary Key
+A unique identifier for records in a table. No two records can have the same primary key.
+## Foreign Key
+Fields in a table that match the primary key of another table, creating a link between the two tables.
+# Schemas and Metadata
+
+## Database Schema
+### What it is
+Skeletal structure representing a logical view of a database.
+### What it does
+Describes shape of data and how it relates to other models, tables and databases.
+### Examples
+* Star schema
+* Snowflake schema
+* Fact constellation schema (or galaxy schema)
+
+## SQL Schema
+### What it is
+A type of database schema that Encompasses functions, indexes, tables and views in a way that uses the Structured Query Language to define the schema.
+### What it does
+Help define objects at the logical level.
+### Examples
+Virtual table comprised of columns and rows with foreign keys and primary keys representing relationship between tables.
+
+## AI Schema
+### What it is
+A framework that standardises how AI models interact with structured data 
+### What it does
+Provides a standardised way for AI to interact with data by defining the structure and type of data that an AI model can understand or produce.
+### Examples
+In weather prediction, an AI schema might define fields like “temperature”, “humidity”, etc. The AI model’s output, such as { "temperature": 20, "humidity": 80 }, adheres to this schema, making it easily understandable and usable by other systems. 
+
+## SEO Schema
+### What it is
+Meta information that clearly explains relationships among people, products and thing to web crawlers.
+### What it does
+Enhance search engine results page visibility for images, videos, FAQs and more.
+### Examples
+Schema markup or labels coded in HTML that add context and share important information about the web pages.
+
+## API
+### What it is
+Virtual instructions manual amplifying programming processes.
+### What it does
+Describes RESTful API operations and methods for interacting with APIs.
+### Examples
+Schema markup or labels coded in HTML that add context and share important information about the web pages.API Description Languages (API DL) and OpenAPI standard used to create schema.
+
+## Psychology
+### What it is
+Mental concepts that provide a guide to cognitive processes and behaviour
+### What it does
+Informs individual about what they can expect form experiences and situations
+### Examples
+* Event schemas
+* Object schemas
+* Person schema
+* Self-schemas
+* Social schemas
+
+# Comparison of SQL Databases
+## PostgreSQL
+widely-used open-source relational database system known for its robustness and flexibility in handling complex SQL operations
+## Amazon Redshift
+* a cloud-based data warehousing service optimised for online analytical processing (OLAP) tasks 
+* integrates seamlessly with other AWS services, making it a preferable choice for businesses already embedded within the AWS ecosystem
+
+
+<br/>
+<br/>
+<br/>
+
+Redshift is designed to handle large scale data analytics workflows more efficiently than PostgreSQL due to its columnar storage and parallel query execution. <br/>
+While both Redshift and PostgreSQL support SQL, there are variations in their SQL dialects and extensions.
+
+
+# Learning Journal Work:
+## List of databases that you have encountered at work.
+* CFADH_MRT
+* StaffManager
+* Group Data Warehouse
+
+
+## Whether these databases are open-source or not.
+Not
+
+## If they are cloud or on-premise.
+On Premise
+
+## Is internal training available in-house on how to use them efficiently.
+* GDW Yes. Required for access.
+* CFADH_MRT No
+* Staff Manager No
+
