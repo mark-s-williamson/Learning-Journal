@@ -2,5 +2,5 @@
 
 
 ## Fri 21/03
-* Find a way to upload Topic 3 apply tasks 1 and 2 from work device
+* Find a way to upload 1 Topic 3 apply tasks 1 and 2 from work device
 * Complete 1 Topic 4 Lucidchart - 
