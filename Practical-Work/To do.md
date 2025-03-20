@@ -9,3 +9,5 @@ During the shadowing session, be respectful, curious, and prepared with question
 * Utilise internal resources like wikis, documentation, and knowledge bases to gather insights on automated data quality management within your organisation
 
   ### upload a separate document to log your training hours and add it to your learning journal on GitHub
+
+## Find a way to upload Topic 3 apply tasks 1 and 2 from work device
