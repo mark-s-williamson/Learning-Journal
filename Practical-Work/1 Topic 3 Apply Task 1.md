@@ -53,7 +53,7 @@ You can meet this outcome by completing the following:
 
   Sprint Planning → Daily Standups → Sprint Review → Sprint Retrospective → Sprint Planning (continues).<br/>
 
-  Lean and Six Sigma reviews of specific sprints will occur in each Sprint Retrospective, identifying:<br/>
+ ## Lean and Six Sigma reviews of specific sprints will occur in each Sprint Retrospective, identifying:<br/>
 * Waste (Lean)
 * Variability and defects (Six Sigma)
 * Non-value-added tasks
