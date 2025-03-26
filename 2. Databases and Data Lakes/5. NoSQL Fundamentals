@@ -1,1 +1,30 @@
-#
+# Understanding NoSQL Databases
+
+## The need for Not Only SQL Databases
+Example of Apple, Fitbit and Android health tracking. Some fields present in one, not the other. SQL relational database would include lots of nulls from the left join.
+Data is stored more in data-value pairs, like JSON.
+
+
+# Types of NoSQL Databases
+## NoSQL data storage models:
+* Document: JSON. Each document contains pairs of fields and values. 
+The values can typically be a variety of types including strings, 
+numbers, booleans, arrays, or objects, and their structure doesn't have to be predefined.<br/>
+e.g. MongoDB
+* Key Value: Simplest type. Each item in the DB is stored as an attribute name(key) together with its value.<br/>
+e.g. Redis. Shopping cart application. 
+* Wide-Column/Column Family: Dynamic columns. store data in columns instead of rows which can be quickly searched and aggregated. best for analysing large datasets
+* Graph: Nodes and edges. Nodes represent entities and edges represent relationships between entities. They are ideal for handling data where relationships are at the core, like social networks,
+
+
+
+## Schema on Read
+## BASE
+## CAP theorem
+
+
+# Discovering MongoDB
+
+
+# Unstructured Data from MongoDB to SQL
+
