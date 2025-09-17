@@ -1,0 +1,40 @@
+{"event_type": "click", "event_id": "clk-00000001", "ts": "2025-09-17T14:59:00.056371+00:00", "user_id": "07233fb4-d762-47c6-8eae-cae13399d6f9", "page": "/", "device": "mobile"}
+{"event_type": "click", "event_id": "clk-00000002", "ts": "2025-09-17T14:59:00.256630+00:00", "user_id": "2f309cf6-06b6-4081-aea9-75000e222f49", "page": "/product", "device": "desktop"}
+{"event_type": "click", "event_id": "clk-00000003", "ts": "2025-09-17T14:59:00.456802+00:00", "user_id": "fb1b5be0-587e-4a62-b370-014c2d194bc1", "page": "/search", "device": "desktop"}
+{"event_type": "click", "event_id": "clk-00000004", "ts": "2025-09-17T14:59:00.657312+00:00", "user_id": "1248c68b-1584-4fd2-af3c-019904a7d2ea", "page": "/", "device": "smarterToaster"}
+{"event_type": "click", "event_id": "clk-00000005", "ts": "2025-09-17T14:59:00.857941+00:00", "user_id": "13a71a4c-1109-4b11-985a-4afd12797c81", "page": "/", "device": "smarterToaster"}
+{"event_type": "click", "event_id": "clk-00000006", "ts": "2025-09-17T14:59:01.058405+00:00", "user_id": "f6f18d48-935d-43b4-8e3e-f7bbcfb5b7bb", "page": "/cart", "device": "mobile"}
+{"event_type": "click", "event_id": "clk-00000007", "ts": "2025-09-17T14:59:01.258835+00:00", "user_id": "06ae0651-657f-443a-b86d-eceaebfc92d6", "page": "/", "device": "mobile"}
+{"event_type": "click", "event_id": "clk-00000008", "ts": "2025-09-17T14:59:01.459033+00:00", "user_id": "8f286e93-37f8-4b70-922c-f639963cf091", "page": "/search", "device": "desktop"}
+{"event_type": "click", "event_id": "clk-00000009", "ts": "2025-09-17T14:59:01.659292+00:00", "user_id": "a673f626-cc1d-4899-94aa-070577c6e98c", "page": "/checkout", "device": "smarterToaster"}
+{"event_type": "click", "event_id": "clk-00000010", "ts": "2025-09-17T14:59:01.859675+00:00", "user_id": "b1814f51-8f75-4060-b795-bc92abecf8d0", "page": "/", "device": "smarterToaster"}
+{"event_type": "order", "event_id": "ord-00000001", "ts": "2025-09-17T14:59:06.080915+00:00", "customer_id": "d1b322e7-e9e5-4846-a1a1-dd0456b7a5f0", "amount": 321.52}
+{"event_type": "order", "event_id": "ord-00000002", "ts": "2025-09-17T14:59:06.281194+00:00", "customer_id": "1198b1a3-a5b8-4a14-b099-8c84995c1ca6", "amount": 17.38}
+{"event_type": "order", "event_id": "ord-00000003", "ts": "2025-09-17T14:59:06.481721+00:00", "customer_id": "4144c1a8-2707-4abf-95a4-9acab2d2f8eb", "amount": 141.14}
+{"event_type": "order", "event_id": "ord-00000004", "ts": "2025-09-17T14:59:06.682137+00:00", "customer_id": "7c795b3f-aa22-4a0a-a83e-29ce2beb6b4f", "amount": 115.49}
+{"event_type": "order", "event_id": "ord-00000005", "ts": "2025-09-17T14:59:06.882630+00:00", "customer_id": "b6d37ef8-000b-4caa-95a4-e187a46813ae", "amount": 369.55}
+{"event_type": "order", "event_id": "ord-00000006", "ts": "2025-09-17T14:59:07.083025+00:00", "customer_id": "af952dce-b6b6-4bc4-9c29-9dc25b3b7464", "amount": 339.97}
+{"event_type": "order", "event_id": "ord-00000007", "ts": "2025-09-17T14:59:07.283381+00:00", "customer_id": "a600f521-7506-480d-83e6-b139086d5b9d", "amount": 446.63}
+{"event_type": "order", "event_id": "ord-00000008", "ts": "2025-09-17T14:59:07.483745+00:00", "customer_id": "c54c4c09-9f57-4dc1-94e6-9bcb76760362", "amount": 48.03}
+{"event_type": "order", "event_id": "ord-00000009", "ts": "2025-09-17T14:59:07.684121+00:00", "customer_id": "2b0d5f0e-d045-496b-85e0-bab9367401a4", "amount": 213.85}
+{"event_type": "order", "event_id": "ord-00000010", "ts": "2025-09-17T14:59:07.884554+00:00", "customer_id": "12baa437-0cac-4a59-8df7-b8d4e1611b27", "amount": 19.75}
+{"event_type": "sensor", "event_id": "sns-00000001", "ts": "2025-09-17T14:59:12.842850+00:00", "sensorid": 41, "sensor_value": 15}
+{"event_type": "sensor", "event_id": "sns-00000002", "ts": "2025-09-17T14:59:13.043305+00:00", "sensorid": 2, "sensor_value": 95}
+{"event_type": "sensor", "event_id": "sns-00000003", "ts": "2025-09-17T14:59:13.244031+00:00", "sensorid": 18, "sensor_value": 32}
+{"event_type": "sensor", "event_id": "sns-00000004", "ts": "2025-09-17T14:59:13.444288+00:00", "sensorid": 15, "sensor_value": 18}
+{"event_type": "sensor", "event_id": "sns-00000005", "ts": "2025-09-17T14:59:13.644592+00:00", "sensorid": 48, "sensor_value": 14}
+{"event_type": "sensor", "event_id": "sns-00000006", "ts": "2025-09-17T14:59:13.845325+00:00", "sensorid": 44, "sensor_value": 95}
+{"event_type": "sensor", "event_id": "sns-00000007", "ts": "2025-09-17T14:59:14.045613+00:00", "sensorid": 35, "sensor_value": 12}
+{"event_type": "sensor", "event_id": "sns-00000008", "ts": "2025-09-17T14:59:14.246200+00:00", "sensorid": 38, "sensor_value": 55}
+{"event_type": "sensor", "event_id": "sns-00000009", "ts": "2025-09-17T14:59:14.446710+00:00", "sensorid": 3, "sensor_value": 4}
+{"event_type": "sensor", "event_id": "sns-00000010", "ts": "2025-09-17T14:59:14.647308+00:00", "sensorid": 6, "sensor_value": 28}
+{"event_type": "sensor", "event_id": "sns-00000001", "ts": "2025-09-17T14:59:24.475493+00:00", "sensorid": 41, "sensor_value": 15}
+{"event_type": "sensor", "event_id": "sns-00000002", "ts": "2025-09-17T14:59:24.676201+00:00", "sensorid": 2, "sensor_value": 95}
+{"event_type": "sensor", "event_id": "sns-00000003", "ts": "2025-09-17T14:59:24.876354+00:00", "sensorid": 18, "sensor_value": 32}
+{"event_type": "sensor", "event_id": "sns-00000004", "ts": "2025-09-17T14:59:25.076766+00:00", "sensorid": 15, "sensor_value": 18}
+{"event_type": "sensor", "event_id": "sns-00000005", "ts": "2025-09-17T14:59:25.277375+00:00", "sensorid": 48, "sensor_value": 14}
+{"event_type": "sensor", "event_id": "sns-00000006", "ts": "2025-09-17T14:59:25.477742+00:00", "sensorid": 44, "sensor_value": 95}
+{"event_type": "sensor", "event_id": "sns-00000007", "ts": "2025-09-17T14:59:25.678126+00:00", "sensorid": 35, "sensor_value": 12}
+{"event_type": "sensor", "event_id": "sns-00000008", "ts": "2025-09-17T14:59:25.878278+00:00", "sensorid": 38, "sensor_value": 55}
+{"event_type": "sensor", "event_id": "sns-00000009", "ts": "2025-09-17T14:59:26.078563+00:00", "sensorid": 3, "sensor_value": 4}
+{"event_type": "sensor", "event_id": "sns-00000010", "ts": "2025-09-17T14:59:26.279204+00:00", "sensorid": 6, "sensor_value": 28}
