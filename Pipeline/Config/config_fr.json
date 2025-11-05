@@ -1,0 +1,42 @@
+{
+    "label":"FR",
+    "user_path":"data/FR User Data.csv",
+    "login_path": "data/FR-User-LoginTS.csv",
+    "currency":"EUR",
+    "salary_period":12,
+    "timezone":"Europe/Paris",
+    "date_format":"%y-%m-%d",
+
+    "mapping_columns": {
+        "Prénom": "first_name",
+        "Nom de famille": "surname",
+        "DdN": "dob",
+        "\nÂge dernier anniversaire": "age_last_birthday",
+        "Couleur préférée": "favourite_colour",
+        "Animal préféré": "favourite_animal",
+        "Plat préféré": "favourite_food",
+        "Genre": "gender",
+        "Mot de passe": "password",
+        "Ville": "city",
+        "Département": "county",
+        "Code postal": "postcode",
+        "Adresse électronique": "email",
+        "Téléphone": "phone",
+        "Portable ": "mobile",
+        "BAC+": "education",
+        " Salaire ": "salary",
+        "Visites du site Web au cours des 30 derniers jours": "website_visits_last_30_days"
+ } ,
+
+    "mapping_gender": {"F":"Female", "M": "Male", "NB": "Non-Binary"},
+
+    "mapping_education": {
+        "Baccalauréat":3,
+        "Licentiate":6,
+        "Master":7,
+        "CFA":5,
+        "Collège":1,
+        "Lycée":2,
+        "Doctorat":8
+        }
+}

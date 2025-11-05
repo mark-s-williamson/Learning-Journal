@@ -15,6 +15,8 @@ CREATE TABLE IF NOT EXISTS users (
     password TEXT NOT NULL,
     city TEXT,
     county TEXT,
+    state TEXT,
+    state_code CHAR(2),
     postcode TEXT,
     email TEXT NOT NULL UNIQUE,
     phone TEXT,
@@ -22,9 +24,9 @@ CREATE TABLE IF NOT EXISTS users (
     rqf TEXT,
     education TEXT,
     salary REAL,
-    currency CHAR(3) CHECK(currency IN ('GBP', 'EUR')) NOT NULL,
+    currency CHAR(3) CHECK(currency IN ('GBP', 'EUR', 'USD')) NOT NULL,
     website_visits_last_30_days INTEGER,
-    country_code CHAR(2) CHECK(country_code IN ('UK', 'FR')) NOT NULL
+    country_code CHAR(2) CHECK(country_code IN ('UK', 'FR', 'US')) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS logins (
