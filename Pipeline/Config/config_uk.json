@@ -1,0 +1,10 @@
+ {   
+    "label":"UK",
+    "user_path":"data/UK User Data.csv",
+    "login_path": "data/UK-User-LoginTS.csv",
+    "currency":"GBP",
+    "salary_period":1,
+    "timezone":"Europe/London",
+    "date_format":"%y-%m-%d",
+    "encoding": "latin1"
+} 

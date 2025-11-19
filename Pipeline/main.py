@@ -3,8 +3,14 @@
 
 import sqlite3
 import json
+import logging
 from pipeline.extract import load_user_data, load_login_data
 from pipeline.transform import transform_users_df
+from tests.validation import check_email_uniqueness, check_duplicates
+
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO) 
 
 EXCLUSION_LIST = ['BLANK', '-', 'NA', 'NONE', '{NULL}', 'VIDE']
 
@@ -38,8 +44,14 @@ usa_mapping_education = {
 # load configs
 config_fr = load_json_config('config/config_fr.json')
 
+logger.info("Loading UK user data")
 users_uk = load_user_data('data/UK User Data.csv',
                           encoding='latin1')
+
+logger.info(f"Total rows 'data/UK User Data.csv' is {len(users_uk)}")
+logger.info("Transforming UK user data") 
+
+
 users_uk = transform_users_df(users_uk,
                               exclusions=EXCLUSION_LIST,
                               country_code='UK')

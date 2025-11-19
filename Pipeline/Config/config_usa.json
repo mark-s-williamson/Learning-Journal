@@ -1,0 +1,32 @@
+{
+    "label":"USA",
+    "user_path":"data/USA User Data.csv",
+    "login_path": "data/USA-User-LoginTS.csv",
+    "currency":"USD",
+    "salary_period":1,
+    "timezone":"US/Eastern",
+    "date_format":"%m/%d/%y",
+    "encoding": "utf-8",
+
+    "mapping_columns": {
+        "Last Name":"surname",
+        "Favorite Color":"favourite_colour",
+        "Favorite Animal":"favourite_animal",
+        "Favorite Food":"favourite_food",
+        "Town/City":"city",
+        "Zip Code":"postcode",
+        "Landline":"phone",
+        "Cell Phone":"mobile"
+    },
+
+    "mapping_gender": {"0":"Female", "1": "Male"},
+
+    "mapping_education": {
+    "High School Diploma":3,
+    "Associate Degree":4,
+    "Foundation Degree":5,
+    "Bachelor Degree":6,
+    "Master’s":7,
+    "Doctorate":8
+    }
+} 

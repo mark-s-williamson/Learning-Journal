@@ -6,6 +6,7 @@
     "salary_period":12,
     "timezone":"Europe/Paris",
     "date_format":"%y-%m-%d",
+    "encoding": "utf-8",
 
     "mapping_columns": {
         "Prénom": "first_name",
