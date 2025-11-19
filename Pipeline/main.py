@@ -6,84 +6,53 @@ import json
 import logging
 from pipeline.extract import load_user_data, load_login_data
 from pipeline.transform import transform_users_df
-from tests.validation import check_email_uniqueness, check_duplicates
+from tests.validation import check_duplicates, check_email_uniqueness
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO) 
 
 EXCLUSION_LIST = ['BLANK', '-', 'NA', 'NONE', '{NULL}', 'VIDE']
 
 def load_json_config(path:str):
+    """Load JSON config file"""
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
-    return
-
-usa_mapping_columns = {
-    'Last Name':'surname',
-    'Favorite Color':'favourite_colour',
-    'Favorite Animal':'favourite_animal',
-    'Favorite Food':'favourite_food',
-    'Town/City':'city',
-    'Zip Code':'postcode',
-    'Landline':'phone',
-    'Cell Phone':'mobile'
-}
-
-usa_mapping_gender = {0:'Female', 1: 'Male'}
-
-usa_mapping_education = {
-    'High School Diploma':3,
-    'Associate Degree':4,
-    'Foundation Degree':5,
-    'Bachelor Degree':6,
-    "Master’s":7,
-    'Doctorate':8
-}
 
 # load configs
+config_uk = load_json_config('config/config_uk.json')
 config_fr = load_json_config('config/config_fr.json')
+config_usa = load_json_config('config/config_usa.json')
 
-logger.info("Loading UK user data")
-users_uk = load_user_data('data/UK User Data.csv',
-                          encoding='latin1')
-
-logger.info(f"Total rows 'data/UK User Data.csv' is {len(users_uk)}")
-logger.info("Transforming UK user data") 
-
-
-users_uk = transform_users_df(users_uk,
-                              exclusions=EXCLUSION_LIST,
-                              country_code='UK')
-users_fr = load_user_data(config_fr['user_path'],
-                          date_format=config_fr['date_format'],
-                          mapping=config_fr['mapping_columns'])
-users_fr = transform_users_df(users_fr,
-                              exclusions=EXCLUSION_LIST,
-                              country_code=config_fr['label'],
-                              currency=config_fr['currency'],
-                              salary_period=config_fr['salary_period'],
-                              mapping_gender=config_fr['mapping_gender'],
-                              mapping_education=config_fr['mapping_education'])
-users_usa = load_user_data('data/USA User Data.csv',
-                           date_format='%m/%d/%y',
-                           mapping=usa_mapping_columns)
-users_usa = transform_users_df(users_usa,
+def process_data(config):
+    """Process user and login data based on config file"""
+    logger.info(f"Loading {config['label']} user data")
+    users = load_user_data(config['user_path'],
+                           date_format=config['date_format'],
+                           mapping=config.get('mapping_columns', None),
+                           encoding=config['encoding'])
+    logger.info(f"Total rows '{config['user_path']}' is {len(users)}")
+    logger.info(f"Transforming {config['label']} user data")
+    users = transform_users_df(users,
                                exclusions=EXCLUSION_LIST,
-                               country_code='US',
-                               currency='USD',
-                               mapping_gender=usa_mapping_gender,
-                               mapping_education=usa_mapping_education)
+                               country_code=config['label'],
+                               currency=config['currency'],
+                               salary_period=config['salary_period'],
+                               mapping_gender=config.get('mapping_gender', None),
+                               mapping_education=config.get('mapping_education', None))
+    check_duplicates(users)
+    check_email_uniqueness(users)
+    logger.info(f"Loading {config['label']} login data")
+    logins = load_login_data(config['login_path'],
+                             timezone=config['timezone'])
 
+    return users, logins
 
-logins_uk = load_login_data('data/UK-User-LoginTS.csv')
-logins_fr = load_login_data(config_fr['login_path'],
-                            timezone=config_fr['timezone'])
-logins_usa = load_login_data('data/USA-User-LoginTS.csv', timezone='US/Eastern')
+users_uk, logins_uk = process_data(config_uk)
+users_fr, logins_fr = process_data(config_fr)
+users_usa, logins_usa = process_data(config_usa)
 
-
-with open('scripts/create_database.sql', 'r', encoding='utf-8') as f:
-    create_sql = f.read()
+with open('scripts/create_database.sql', 'r', encoding='utf-8') as db_f:
+    create_sql = db_f.read()
 conn = sqlite3.connect('customers.db')
 try:
     conn.executescript(create_sql)
@@ -96,4 +65,3 @@ try:
     conn.commit()
 finally:
     conn.close()
-

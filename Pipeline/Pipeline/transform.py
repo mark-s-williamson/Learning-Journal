@@ -28,7 +28,7 @@ def hash_password(pw: str) -> str:
     else:
         return hashlib.sha256(pw.encode('utf-8')).hexdigest()
 
-def clean_salary(salary:str, period:int=1) -> float:
+def clean_salary(salary:str|None, period:int=1) -> float|None:
     if salary is None:
         return None
     else:

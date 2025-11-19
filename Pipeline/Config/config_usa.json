@@ -1,5 +1,5 @@
 {
-    "label":"USA",
+    "label":"US",
     "user_path":"data/USA User Data.csv",
     "login_path": "data/USA-User-LoginTS.csv",
     "currency":"USD",
@@ -29,4 +29,4 @@
     "Master’s":7,
     "Doctorate":8
     }
-} 
+}

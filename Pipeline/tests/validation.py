@@ -1,10 +1,8 @@
 import logging
 import pandas as pd
 
-
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.INFO) 
 
 # duplicates
 def check_duplicates(df:pd.DataFrame) -> None:
@@ -20,4 +18,8 @@ def check_email_uniqueness(df:pd.DataFrame, subset=['email']) -> None:
     if num_dupes > 0:
         logging.info(f"Found {num_dupes} duplicate emails")
     else:
-        logging.info("No duplicate emails found") 
+        logging.info("No duplicate emails found")
+
+# missing values?
+
+# correct columns
